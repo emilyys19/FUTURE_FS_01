@@ -1,5 +1,6 @@
 # FUTURE_FS_01
 Emily Singh | Portfolio
+
 Welcome to my personal portfolio! This website showcases my skills, projects and experience in web development and IT.
 
 💻 ABOUT ME:
