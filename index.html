@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emily Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Navbar link scroll(JS) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("nav a[href^='#']");
+      links.forEach(link => {
+        link.addEventListener("click", function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          target.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    });
+  </script>
+
+</head>
+<body>
+<header>
+  <nav>
+    <!---Navbar Logo and links-->
+    <h2 class="logo">EMILY SINGH</h2>
+    <ul> <!---Links to take me to sections of the page--->
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!---Hero Section (Main section about me)-->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <img src="profile.png" alt="Emily Singh" class="hero-img">
+        <div class="hero-text">
+  <h1>Hi, I'm Emily Singh</h1> <br><br>
+  <h3>I'm a Final-Year IT Student & Aspiring Full Stack Developer</h3><br>
+  <p>
+    I build clean, responsive web applications and enjoy solving problems with code.
+  </p><br>
+  <a href="https://github.com/emilyys19" class="btn">View Projects</a> <!---Link to github where projects can be found.--->
+        </div>
+   </div>
+</section>
+<br><br>
+
+<section id="about">
+    <div class="container">
+  <h2>ABOUT ME: </h2>
+  <p>
+    I'm a final-year Bachelor of Science in Information Technology student with a strong
+    interest in software and web development.
+  </p><br>
+  <p>I have hands-on experience with HTML5, CSS, Javascript, PHP and MySQL. I am currently learning React to strengthen my front-end skills, and build dynamic web applications.
+  </p>
+  <p><br>
+    I am highly motivated, adaptable and passionate in what I do. I enjoy working in teams and am always eager to learn new technologies and improve my skills. I am excited to start my career as a full stack developer and contribute to innovative projects.
+  </p>
+<br><br>
+<br>
+  <h3>SKILLS:</h3>
+
+<div class="skills-grid">
+
+  <div class="skill-group">
+    <h4>LANGUAGES</h4>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>C++</li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h4>FRAMEWORKS</h4>
+    <ul class="skills-list">
+      <li>React (learning)</li>
+    </ul>
+  </div>
+
+  <div class="skill-group">
+    <h4>BACKEND / TOOLS</h4>
+    <ul class="skills-list">
+      <li>PHP</li>
+      <li>Node.js (basic)</li>
+      <li>VSCode</li>
+      <li>Git & GitHub</li>
+      <li>MySQL (basic)</li>
+    </ul>
+  </div>
+
+    <div class="skill-group">
+    <h4>SOFT SKILLS</h4>
+    <ul class="skills-list">
+      <li>Communication</li>
+      <li>Teamwork</li>
+      <li>Problem-Solving</li>
+      <li>Adaptability</li>
+      <li>Time Management</li>
+      <li>Consistency</li>
+    </ul>
+  </div>
+
+</div>
+
+</section>
+
+<section id="projects">
+    <div class="container">
+
+  <h2>PROJECTS:</h2><br>
+    <h3>Social Media Website :</h3>
+    <p>A social media site to upload pictures and share updates with friends.</p>
+    <p><strong>Tech used:</strong> HTML, CSS, PHP, MySQL</p><br>
+
+    <h3>Portfolio Website :</h3>
+    <p>My personal portfolio to showcase my skills and projects.</p>
+    <p><strong>Tech used:</strong> HTML, CSS</p><br>
+    <a href="https://github.com/emilyys19">GitHub</a> 
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>CONTACT: </h2>
+    <br>
+    <p><strong>Email:</strong> 
+      <a href="mailto:emilysingh236@gmail.com">emilysingh236@gmail.com</a>
+    </p>
+
+    <p><strong>GitHub:</strong> 
+      <a href="https://github.com/emilyys19" target="_blank">github.com/emilyys19</a>
+    </p>
+
+    <p><strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/emily-singh" target="_blank">
+        linkedin.com/in/emily-singh
+      </a>
+    </p>
+<br>
+
+    <h3>Send Me a Message: </h3>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" placeholder="Your email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Message:</label>
+        <textarea rows="5" placeholder="Your message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+    <footer>
+        <p>© 2026 Emily Singh | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
